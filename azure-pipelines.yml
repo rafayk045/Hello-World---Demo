@@ -9,10 +9,8 @@ trigger:
 pool: default
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: python3 hello_world.py
+  displayName: 'Run a python script that prints hello world'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- script: python3 test_hello_world.py
+  displayName: 'Run python unit test of hello world print statement'
