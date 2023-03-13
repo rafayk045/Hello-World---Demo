@@ -9,7 +9,7 @@ class TestHelloWorld(unittest.TestCase):
         sys.stdout = captured_output
         hello_world()
         sys.stdout = sys.__stdout__
-        self.assertEqual(captured_output.getvalue().strip(), "Hello World")
+        self.assertEqual(captured_output.getvalue().strip(), "This Pipeline Works!")
 
 if __name__ == '__main__':
     unittest.main()
